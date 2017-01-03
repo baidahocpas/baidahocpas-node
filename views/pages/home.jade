@@ -3,6 +3,39 @@ extends ../templates/page
 block content
   include ../templates/navbar
   
-  h1= siteTitle
-  h2= siteTitle
-  p Welcome to #{siteTitle}
+  //- header
+  div.intro-header
+    div.container
+      div.row
+        div.col-lg-12
+          div.intro-message
+            h2= siteTitle
+            h1 Knowledge = Power
+            hr.intro-divider
+  
+  //- contentA
+  div.content-section-a
+    div.container
+      div.row
+        div.col-lg-5.col-sm-6
+          hr.small-hr.pull-left
+          div.clearfix
+          h2.section-heading Power to Manage
+          p.lead Let us take care of the bookkeeping, payroll, and contract controller services, so you can spend your time where it's most valuable: managing your business.
+          p.lead As certified QuickBooks ProAdvisors, the accounting professionals at Bennett & Associates, CPAs specialize in providing the knowledge business owners need to manage and grow their business successfully. Ranging from daily bookkeeping and payroll services, to in-depth business analysis with the use of key performance indicators and tax planning, our accountants have the skills required to help make your business successful.
+        div.col-lg-5.col-lg-offset-2.col-sm-6
+          img.img-responsive.center-block(style='max-height:400px' src='https://plugin-qbo.intuit.com/brand/1.0.2/product-specific-brand/assets/quickbooks-accountant/QuickBooks-ProAdvisor-Program/Logos/1_Badge_Online_large.png' alt='Quickbooks Certified ProAdvisor - QuickBooks Online Certification')
+  
+  //- contentA
+  div.content-section-b
+    div.container
+      div.row
+        div.col-lg-5.col-lg-offset-1.col-sm-6.col-sm-push-6
+          hr.small-hr.pull-left
+          div.clearfix
+          h2.section-heading Power to Change
+          p.lead Key performance indicators (KPIs) provide you with the numbers behind your business. From return on revenue to receivable turnover, we can tailor KPIs specifically to your industry and business, maximizing profitability and cash flow.
+          p.lead Let employee performance reviews be about more than just performance. Measure your employees by the value they bring tos your team.
+          p.lead Our goal is the same as yours: maximize the value of your firm and the profit you take home.
+        div.col-lg-5.col-lg-offset-2.col-sm-6
+          img.img-responsive.center-block(style='' alt='')
