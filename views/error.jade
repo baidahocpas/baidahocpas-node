@@ -1,0 +1,8 @@
+extends ./templates/page
+
+block content
+  h1= message
+  h2= error.status
+  
+  //- Uncomment for dev
+  //- pre #{error.stack}
