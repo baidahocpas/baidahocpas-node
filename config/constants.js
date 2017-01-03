@@ -1,5 +1,8 @@
 // Application-wide constants
 module.exports = {
+  // Config
+  env: 'development', // 'development', 'production'
+  
   // Site
   siteTitle: 'Bennett & Associates, CPAs',
   siteTitleShort: 'Bennett',

@@ -5,4 +5,5 @@ block content
   h2= error.status
   
   //- Uncomment for dev
-  //- pre #{error.stack}
+  if env === 'development'
+    pre #{error.stack}
