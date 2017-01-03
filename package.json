@@ -1,6 +1,6 @@
 {
-  "name": "project",
-  "version": "0.0.0",
+  "name": "baidahocpas-node",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,7 +13,6 @@
     "express": "~4.14.0",
     "firebase": "^3.6.4",
     "jade": "~1.11.0",
-    "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "morgan": "~1.7.0"
   }
 }
