@@ -1,9 +1,10 @@
 extends ./templates/page
 
 block content
-  h1= message
-  h2= error.status
-  
-  //- Uncomment for dev
-  if env === 'development'
-    pre #{error.stack}
+  div.container
+    h1= message
+    h2= error.status
+
+    //- Uncomment for dev
+    if env === 'development'
+      pre #{error.stack}
