@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var c = require('../config/constants');
+const express  = require('express');
+const router   = express.Router();
+const c        = require('../config/constants');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
