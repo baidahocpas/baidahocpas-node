@@ -1,0 +1,13 @@
+div.page-alert-container
+  div.container
+    if error
+      div.alert.alert-danger.fade.in.page-alert
+        button.close(type='button', data-dismiss='alert', aria-hidden='true'): i.fa.fa-times
+        strong Error:&nbsp;&nbsp;
+        | #{error}&nbsp;&nbsp;
+
+    if success
+      div.alert.alert-success.fade.in.page-alert
+        button.close(type='button', data-dismiss='alert', aria-hidden='true'): i.fa.fa-times
+        strong Success:&nbsp;&nbsp;
+        | #{success}&nbsp;&nbsp;

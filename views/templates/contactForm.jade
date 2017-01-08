@@ -1,0 +1,16 @@
+form.form-horizontal(action='https://formspree.io/' + contactEmail, method='POST')
+  div.form-group
+    label.col-12.control-label(for='inputName') Name
+    div.col-12
+      input#inputName.form-control(type='text', name="Name", required)
+  div.form-group
+    label.col-12.control-label(for='inputEmail') Email
+    div.col-12
+      input#inputEmail.form-control(type='email', name="Email", required)
+  div.form-group
+    label.col-12.control-label(for='inputMessage') Message
+    div.col-12
+      textarea#inputMessage.form-control(rows=5, name="Name", required)
+  div.form-group
+    div.col-12
+      button.btn.btn-primary(type='submit') Send Message

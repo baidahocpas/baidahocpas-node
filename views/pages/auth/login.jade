@@ -1,0 +1,18 @@
+extends ../../templates/page
+
+block content
+  include ../../templates/navbar
+  
+  //- http://bootsnipp.com/snippets/featured/google-style-login
+  div.container
+    div.row
+      div.col-sm-6.col-md-4.col-md-offset-4        
+        h2.text-center.login-title Sign in to continue
+        div.account-wall
+          img.profile-img(src='https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120', alt='Profile picture')
+          form.form-signin(action='/auth/login', method='POST')
+            div.form-group
+              input.form-control(name='userEmail', type='text', placeholder='Email', required, autofocus)
+              input.form-control(name='userPasswd', type='password', placeholder='Password', required)
+            button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign in
+        a.text-center.new-account(href='') Create an account
