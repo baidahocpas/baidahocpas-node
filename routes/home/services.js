@@ -1,8 +1,8 @@
 'use strict';
 
 /**
- * /home
- * Home
+ * /home/services
+ * Services
  */
 
 // Import
@@ -13,16 +13,11 @@ const firebase = require('firebase');
 const router = express.Router({ mergeParams: true });
 const db = firebase.database();
 
-// Routes
-const services = require('./services');
-
-router.use('/services', services);
-
 /**
- * GET /home
+ * GET /home/services
  */
 router.get('/', function(req, res, next) {
-  res.render('pages/home');
+  res.render('pages/home/services');
   return;
 });
 

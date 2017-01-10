@@ -36,8 +36,13 @@ const home = require('./home');
 const admin = require('./admin');
 const auth = require('./auth');
 
-router.use('/', home);
+router.use('/home', home);
 router.use('/admin', admin);
 router.use('/auth', auth);
+
+router.get('/', function(req, res, next) {
+  res.redirect('/home');
+  return;
+});
 
 module.exports = router;

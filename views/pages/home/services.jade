@@ -1,0 +1,30 @@
+extends ../../templates/page
+
+block content
+  include ../../templates/navbar
+  
+  div.container
+    h1 Services
+    
+    div.table-responsive
+      table.table.table-striped.table-borderless
+        thead: tr
+          th
+          th.text-center: h4 Monthly Accounting
+          th.text-center: h4
+            | Weekly Accounting
+            br
+            | + Payroll
+          th.text-center: h4
+            | Daily
+            br
+            | Contract Controller
+        
+        // Financials
+        thead: tr.table-subheader: th(colspan='4'): h5 Financial Statement Preparation (Unaudited)
+        tbody
+          tr
+            td Monthly Balance Sheet
+            td.text-center: i.fa.fa-check
+            td.text-center: i.fa.fa-check
+            td.text-center: i.fa.fa-check
