@@ -47,8 +47,8 @@ body {
   }
 
 /* CONTACTBANNER */
-.text-white {
-  color: #fff;
+.contact-banner {
+  font-weight: 700;
 }
 
 /* FOOTER */
@@ -95,6 +95,15 @@ HOME
       padding-bottom: 20%;
   }
   
+.intro-message > h1,
+.intro-message > h2,
+.intro-message > h3,
+.intro-message > h4 {
+  font-family: 'Lato';
+  font-weight: 700;
+}
+
+
   .intro-message > h1 {
       margin: 0;
       text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
