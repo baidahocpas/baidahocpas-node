@@ -63,7 +63,7 @@ body {
   }
   
   @media(max-width:991px) {
-    .footer {
+    footer {
       text-align: center;
     }
     
